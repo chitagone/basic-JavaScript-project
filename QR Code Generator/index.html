@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!-- Declaration of the document type -->
+<html lang="en">
+<!-- Start of the HTML document with language set to English -->
+
+<head>
+    <!-- Start of the header section -->
+    <meta charset="UTF-8">
+    <!-- Character encoding set to UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Viewport settings for responsive design -->
+    <title>Qr Code Generator</title>
+    <!-- Title of the HTML document -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link to an external CSS stylesheet -->
+</head>
+<!-- End of the header section -->
+
+<body>
+    <!-- Start of the body section -->
+    <div class="container">
+        <!-- Start of a division with class "container" -->
+        <p>Enter your Text Or URL</p>
+        <!-- Paragraph prompting user input -->
+        <input type="text" placeholder="Text or URL" id="qrText">
+        <!-- Input field for user input with placeholder and unique id -->
+        <div id="imgBox">
+            <!-- Division with id "imgBox" -->
+            <img src="" alt="" id="qrImage">
+            <!-- Image placeholder with unique id -->
+        </div>
+        <script src="index.js"></script>
+        <!-- Link to an external JavaScript file -->
+        <button onclick="gernerateQR()">Generate</button>
+        <!-- Button triggering JavaScript function -->
+    </div>
+    <!-- End of the division with class "container" -->
+</body>
+<!-- End of the body section -->
+
+</html>
+<!-- End of the HTML document -->

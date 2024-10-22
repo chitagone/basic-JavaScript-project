@@ -1,0 +1,165 @@
+/* Importing Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Global styles */
+
+* {
+    margin: 0;
+    /* Resetting margin for all elements */
+    padding: 0;
+    /* Resetting padding for all elements */
+    box-sizing: border-box;
+    /* Using border-box box model for all elements */
+    font-family: 'Poppins', sans-serif;
+    /* Setting the font family for all elements */
+}
+
+
+/* Body styles */
+
+body {
+    background: #262a2f;
+    /* Setting background color for the body */
+}
+
+
+/* Container styles */
+
+.container {
+    width: 400px;
+    /* Setting width of the container */
+    padding: 25px 35px;
+    /* Setting padding for the container */
+    position: absolute;
+    /* Positioning the container absolutely */
+    top: 50%;
+    /* Placing the container vertically at 50% from the top */
+    left: 50%;
+    /* Placing the container horizontally at 50% from the left */
+    transform: translate(-50%, -50%);
+    /* Translating the container to center it */
+    background: #fff;
+    /* Setting background color for the container */
+    border: 10px;
+    /* Setting border size for the container */
+}
+
+
+/* Paragraph styles inside container */
+
+.container p {
+    font-weight: 600px;
+    /* Setting font weight for paragraphs */
+    font-size: 15px;
+    /* Setting font size for paragraphs */
+    margin-bottom: 8px;
+    /* Setting bottom margin for paragraphs */
+}
+
+
+/* Input field styles inside container */
+
+.container input {
+    width: 100%;
+    /* Setting width of input fields */
+    height: 50px;
+    /* Setting height of input fields */
+    outline: none;
+    /* Removing default outline for input fields */
+    border: 1px solid #494eea;
+    /* Setting border style for input fields */
+    margin: 10px 0 20px;
+    /* Setting margin for input fields */
+    border-radius: 5px;
+    /* Adding border radius for input fields */
+    padding: 0 10px;
+    /* Adding padding for input fields */
+}
+
+
+/* Button styles inside container */
+
+.container button {
+    width: 100%;
+    /* Setting width of buttons */
+    height: 50px;
+    /* Setting height of buttons */
+    background: #494eea;
+    /* Setting background color for buttons */
+    color: #fff;
+    /* Setting text color for buttons */
+    border: 0;
+    /* Removing border for buttons */
+    outline: 0;
+    /* Removing outline for buttons */
+    border-radius: 5px;
+    /* Adding border radius for buttons */
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    /* Adding box shadow for buttons */
+    cursor: pointer;
+    /* Changing cursor style for buttons */
+    margin: 20px 0;
+    /* Setting margin for buttons */
+    font-weight: 500;
+    /* Setting font weight for buttons */
+}
+
+
+/* Image box styles */
+
+#imgBox {
+    width: 200px;
+    /* Setting width of image box */
+    border-radius: 5px;
+    /* Adding border radius for image box */
+    max-height: 0;
+    /* Setting maximum height of image box */
+    overflow: hidden;
+    /* Hiding overflow content for image box */
+    transition: max-height 1s;
+    /* Adding transition effect for max-height */
+}
+
+
+/* Image styles inside image box */
+
+#imgBox img {
+    width: 100%;
+    /* Setting width of images inside image box */
+    padding: 10px;
+    /* Adding padding for images inside image box */
+}
+
+
+/* Styles for showing image box */
+
+#imgBox.show-img {
+    max-height: 300px;
+    /* Setting maximum height of image box when shown */
+    margin: 10px auto;
+    /* Setting margin for shown image box */
+    border: 1px solid #d1d1d1;
+    /* Adding border style for shown image box */
+}
+
+
+/* Error animation */
+
+.error {
+    animation: shake 0.1s linear 10;
+    /* Adding shake animation for elements with error class */
+}
+
+
+/* Shake animation keyframes */
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+        /* Initial position for shake animation */
+        border: 1px solid red;
+        /* Border color for shake animation */
+    }
+    /* Keyframes for shaking animation */
+}

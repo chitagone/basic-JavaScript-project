@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- This meta tag sets the character encoding to UTF-8 -->
+    <meta charset="UTF-8">
+
+    <!-- This meta tag sets the viewport width to the device width and initial scale to 1.0 for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- This sets the title of the HTML document -->
+    <title>Document</title>
+
+    <!-- This links the HTML document to an external CSS file named "style.css" -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- This div element with class "container" wraps the content of the webpage -->
+    <div class="container">
+        <!-- This heading displays the text "Generate a" followed by a line break, and then "Random Password" in a span element -->
+        <h1>Generate a <br> <span>Random Password</span> </h1>
+
+        <!-- This div element with class "display" contains an input field for displaying the generated password and an image for copying the password -->
+        <div class="display">
+            <!-- This input field has type "text" and id "password", initially displaying a placeholder text "password" -->
+            <input type="text" id="password" placeholder="password">
+
+            <!-- This image element with onclick attribute calls the JavaScript function "copyPassword()" when clicked -->
+            <img src="images/copy.png" onclick="copyPassword()">
+        </div>
+
+        <!-- This button triggers the JavaScript function "createPassword()" when clicked, generating a new password -->
+        <button onclick="createPassword()"> <img src="images/generate.png">Generate Password</button>
+    </div>
+
+    <!-- This script tag links the HTML document to an external JavaScript file named "index.js" -->
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,149 @@
+/* Import the Poppins font from Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Apply some base styles to all elements */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    /* Set the default font to Poppins */
+    box-sizing: border-box;
+}
+
+
+/* Style for the main container */
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #4203a9, #90bafc);
+    /* Apply a gradient background */
+    color: #fff;
+    /* Set text color to white */
+    padding: 10px;
+}
+
+
+/* Style for the calculator container */
+
+.calculator {
+    width: 100%;
+    margin-left: 10%;
+    margin-top: 10%;
+    max-width: 600px;
+    /* Limit the width of the calculator container */
+}
+
+
+/* Styles for the calculator title */
+
+.calculator h1 {
+    font-size: 60px;
+    /* Set the font size of the title */
+}
+
+
+/* Styles for the colored span within the calculator title */
+
+.calculator h1 span {
+    color: #ffff76;
+    /* Set the color of the span to a specific yellow */
+}
+
+
+/* Styles for the input box */
+
+.input-box {
+    margin: 40px 0;
+    /* Set margins for the input box */
+    padding: 35px;
+    /* Set padding for the input box */
+    border-radius: 10px;
+    /* Round the corners of the input box */
+    background: rgba(255, 255, 255, 0.3);
+    /* Apply a semi-transparent white background */
+    display: flex;
+    /* Make the input box a flex container */
+    align-items: center;
+    /* Center align items vertically */
+}
+
+
+/* Styles for the input field */
+
+.input-box input {
+    flex: 1;
+    /* Let the input field grow to take up available space */
+    margin-right: 20px;
+    /* Set right margin */
+    padding: 14px 20px;
+    /* Set padding */
+    border: 0;
+    /* Remove borders */
+    outline: 0;
+    /* Remove outline */
+    font-size: 18px;
+    /* Set font size */
+    border-radius: 5px;
+    /* Round the corners */
+    position: relative;
+    /* Set position to relative for positioning the calendar picker */
+}
+
+
+/* Styles for the button */
+
+.calculator button {
+    background: #ffff76;
+    /* Set button background color */
+    border: none;
+    /* Remove border */
+    outline: none;
+    /* Remove outline */
+    padding: 15px 30px;
+    /* Set padding */
+    border-radius: 5px;
+    /* Round the corners */
+    font-weight: 500;
+    /* Set font weight */
+    color: #333;
+    /* Set text color */
+    cursor: pointer;
+    /* Set cursor to pointer */
+}
+
+
+/* Styles for the calendar picker icon */
+
+.input-box input::-webkit-calendar-picker-indicator {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    position: absolute;
+    /* Position the calendar picker */
+    background-position: calc(100% - 10px);
+    background-size: 30px;
+    cursor: pointer;
+    /* Set cursor to pointer */
+}
+
+
+/* Styles for the result */
+
+#result {
+    font-size: 20px;
+    /* Set font size */
+}
+
+
+/* Styles for the colored spans within the result */
+
+#result span {
+    color: #ffff76;
+    /* Set color to yellow */
+}

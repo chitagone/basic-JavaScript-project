@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <section id="fromHolder">
+        <!-- Brand Box -->
+        <div class="row">
+          <div class="col-sm-6 brand">
+            <a href="#" class="logo">Noting <span>.</span></a>
+
+            <div class="heading">
+              <h1>Brand</h1>
+              <p>Your Right Choice</p>
+            </div>
+
+            <div class="success-msg">
+              <p>Great! you are one of our members now</p>
+              <a href="#" class="profile">Your profile</a>
+            </div>
+          </div>
+          <!---- form Box --->
+          <div class="col-sm-6 form">
+            <!--- login form---->
+            <div class="login form-peice switched">
+              <form class="login-form" action="#" method="post">
+                <div class="form-group">
+                  <label for="loginemail">Email Address</label>
+                  <input
+                    type="email"
+                    name="loginemail"
+                    id="loginemail"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="passwordCon">Confirm password</label>
+                  <input
+                    type="password"
+                    name="passwordCon"
+                    id="passwordCon"
+                    class="passConfir"
+                  />
+                  <span>error</span>
+                </div>
+
+                <div class="CTA">
+                  <input type="submit" value="Singup Now" id="submit" />
+                  <a href="#" class="switch">I have an account</a>
+                </div>
+              </form>
+            </div>
+            <!--- end singup form-->
+            <!-- singup form -->
+            <div class="singup form-peice">
+              <form class="singup-form" action="#" method="post">
+                <div class="form-group">
+                  <label for="name">Full Name</label>
+                  <input type="text" name="username" id="name" class="name" />
+                  <span class="error"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input
+                    type="email"
+                    name="emailAddress"
+                    id="email"
+                    class="email"
+                  />
+                  <span class="error"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="phone"
+                    >Phone Number - <small>Option</small></label
+                  >
+                  <input type="text" name="phone" id="phone" />
+                </div>
+
+                <div class="form-group">
+                  <label for="password">Password</label>
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    class="pass"
+                  />
+                  <span class="error"></span>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!--- particial --->
+    <script src="'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'"></script>
+    <script src="'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquer.min.js'"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

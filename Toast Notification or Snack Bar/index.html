@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!-- Specifies the document type and version of HTML -->
+<html lang="en">
+<!-- Defines the language of the document -->
+
+<head>
+    <!-- Start of the head section, contains meta-information about the document -->
+    <meta charset="UTF-8">
+    <!-- Specifies the character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Sets the viewport properties for responsive design -->
+    <title>Toast Notification</title>
+    <!-- Sets the title of the document -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Links an external stylesheet -->
+    <script src="https://kit.fontawesome.com/6b657da592.js" crossorigin="anonymous"></script>
+    <!-- Links the Font Awesome library -->
+</head>
+
+<body>
+    <!-- Start of the body section, contains the content of the document -->
+
+    <div class="button">
+        <!-- Start of a div with class "button" -->
+        <button onclick="showToash(successMsg)">Success</button>
+        <!-- Button triggering a success message -->
+        <button onclick="showToash(errorMsg)">Error</button>
+        <!-- Button triggering an error message -->
+        <button onclick="showToash(invalidMsg)">Invalid</button>
+        <!-- Button triggering an invalid message -->
+    </div>
+    <!-- End of the div with class "button" -->
+
+    <div id="toastBox">
+        <!-- Start of a div with id "toastBox" -->
+    </div>
+    <!-- End of the div with id "toastBox" -->
+
+    <script src="index.js"></script>
+    <!-- Links an external JavaScript file -->
+</body>
+
+</html>
+<!-- End of the HTML document -->

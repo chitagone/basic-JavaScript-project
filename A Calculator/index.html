@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!-- Declares the document type and version of HTML being used. -->
+<html lang="en">
+<!-- Starts the HTML document and sets the language to English. -->
+
+<head>
+    <!-- Contains metadata and links to external resources. -->
+    <meta charset="UTF-8">
+    <!-- Specifies the character encoding for the document as UTF-8. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Sets viewport properties for responsive design. -->
+    <title>Calculator</title>
+    <!-- Sets the title of the HTML document. -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Links an external CSS file named "style.css" for styling. -->
+</head>
+
+<body>
+    <!-- Contains the content of the HTML document. -->
+
+    <div class="container">
+        <!-- Container for the calculator. -->
+        <div class="calculator">
+            <!-- Represents the calculator itself. -->
+            <form>
+                <!-- Wraps the calculator inputs. -->
+
+                <div class="display">
+                    <!-- Represents the display area of the calculator. -->
+                    <input type="text" name="display">
+                    <!-- Input field for displaying numbers and results. -->
+                </div>
+
+                <div>
+                    <!-- Contains rows of buttons for the calculator. -->
+
+                    <!-- Buttons for All Clear (AC), Delete (AD), dot, and division. -->
+                    <input type="button" value="AC" onclick="display.value = '' " class="operator">
+                    <input type="button" value="AD" onclick="display.value = display.value.toString().slice(0,-1)" class="operator">
+                    <input type="button" value="." onclick="display.value += '.' " class="operator">
+                    <input type="button" value="/" onclick="display.value += '/' " class="operator">
+
+                </div>
+
+                <!-- Rows of numeric and operator buttons. -->
+                <div>
+                    <input type="button" value="7" onclick="display.value += '7' ">
+                    <input type="button" value="8" onclick="display.value += '8' ">
+                    <input type="button" value="9" onclick="display.value += '9' ">
+                    <input type="button" value="*" onclick="display.value += '*' " class="operator">
+                </div>
+
+                <div>
+                    <input type="button" value="4" onclick="display.value += '4' ">
+                    <input type="button" value="5" onclick="display.value += '5' ">
+                    <input type="button" value="6" onclick="display.value += '6' ">
+                    <input type="button" value="-" onclick="display.value += '-' " class="operator">
+                </div>
+
+                <div>
+                    <input type="button" value="1" onclick="display.value += '1' ">
+                    <input type="button" value="2" onclick="display.value += '2' ">
+                    <input type="button" value="3" onclick="display.value += '3' ">
+                    <input type="button" value="+" onclick="display.value += '+' " class="operator">
+                </div>
+
+                <div>
+                    <input type="button" value="00">
+                    <input type="button" value="0">
+                    <!-- The "=" button triggers the evaluation of the expression entered in the display. -->
+                    <input type="button" value="=" class="equal" onclick="display.value=eval(display.value)" class="operator">
+
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+    <!-- Links an external JavaScript file named "index.js" for interactivity. -->
+
+</body>
+
+</html>
+<!-- Ends the HTML document. -->
